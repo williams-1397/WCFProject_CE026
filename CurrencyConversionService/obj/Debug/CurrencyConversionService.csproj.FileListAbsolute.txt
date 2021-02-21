@@ -1,0 +1,7 @@
+C:\Users\Lenovo\source\repos\CurrencyConversionService\bin\Debug\CurrencyConversionService.dll.config
+C:\Users\Lenovo\source\repos\CurrencyConversionService\bin\Debug\CurrencyConversionService.dll
+C:\Users\Lenovo\source\repos\CurrencyConversionService\bin\Debug\CurrencyConversionService.pdb
+C:\Users\Lenovo\source\repos\CurrencyConversionService\obj\Debug\CurrencyConversionService.csprojAssemblyReference.cache
+C:\Users\Lenovo\source\repos\CurrencyConversionService\obj\Debug\CurrencyConversionService.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\CurrencyConversionService\obj\Debug\CurrencyConversionService.dll
+C:\Users\Lenovo\source\repos\CurrencyConversionService\obj\Debug\CurrencyConversionService.pdb
