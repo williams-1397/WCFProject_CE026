@@ -3,6 +3,7 @@ This Repo contains SOC project.
 
 
 Steps To Run The project.
+----------------------
 1. Download/ Clone the project.
 2. open .sln solution file  from CurrencyConversionService Folder.
 3. Update ServiceRefrence from CurrencyWebClient/Connected Servicesfolder/ Connetcted serivces.
@@ -10,12 +11,18 @@ Steps To Run The project.
 5. Then You can see following home screen
 
 Screenshot & Demo Video
------------------------
-
-To see a demo video, click the screenshot (right). =>
-<a style="float:right" href="http://screencast.com/t/FlWlTPS8XKrI" target="_blank">
-  <img alt="PicSciP Demo Video" src="https://drive.google.com/file/d/1ssNMQlB8ouMKAioYWStHG16rCQgt-_DA/view?usp=sharing" width="276" height="537" />
+----------------------
+Home Screen Page.
+<a style="float:right" target="_blank">
+  <img alt="PicSciP Demo Video" src="Homepage (1).PNG" width="1200" height="550" />
 </a>
 
-the link of the Project Demo Video.
+Lets Test with Some Values.
+<a style="float:right" target="_blank">
+  <img alt="PicSciP Demo Video" src="Homepage (2).PNG" width="1200" height="550" />
+</a>
+----------------------
+You Can See Demo video By pressing link below
 https://drive.google.com/file/d/1ssNMQlB8ouMKAioYWStHG16rCQgt-_DA/view?usp=sharing
+----------------------
+Thank you for visiting my Repository :)
