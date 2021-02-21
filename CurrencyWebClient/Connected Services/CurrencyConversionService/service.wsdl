@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CurrenyConversionService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICurrencyConversionService_ConvertINRTo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertINRTo" />
+  </wsdl:message>
+  <wsdl:message name="ICurrencyConversionService_ConvertINRTo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertINRToResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICurrencyConversionService_ConvertUSDTo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertUSDTo" />
+  </wsdl:message>
+  <wsdl:message name="ICurrencyConversionService_ConvertUSDTo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertUSDToResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICurrencyConversionService_ConvertCADTo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertCADTo" />
+  </wsdl:message>
+  <wsdl:message name="ICurrencyConversionService_ConvertCADTo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertCADToResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICurrencyConversionService_ConvertGBPTo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertGBPTo" />
+  </wsdl:message>
+  <wsdl:message name="ICurrencyConversionService_ConvertGBPTo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertGBPToResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICurrencyConversionService_ConvertYENTo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertYENTo" />
+  </wsdl:message>
+  <wsdl:message name="ICurrencyConversionService_ConvertYENTo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertYENToResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICurrencyConversionService_ConvertEUROTo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertEUROTo" />
+  </wsdl:message>
+  <wsdl:message name="ICurrencyConversionService_ConvertEUROTo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertEUROToResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICurrencyConversionService_ConvertPKRTo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertPKRTo" />
+  </wsdl:message>
+  <wsdl:message name="ICurrencyConversionService_ConvertPKRTo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertPKRToResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICurrencyConversionService_ConvertYUANTo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertYUANTo" />
+  </wsdl:message>
+  <wsdl:message name="ICurrencyConversionService_ConvertYUANTo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertYUANToResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICurrencyConversionService_ConvertNZDTo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertNZDTo" />
+  </wsdl:message>
+  <wsdl:message name="ICurrencyConversionService_ConvertNZDTo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertNZDToResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICurrencyConversionService_ConvertAEDTo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertAEDTo" />
+  </wsdl:message>
+  <wsdl:message name="ICurrencyConversionService_ConvertAEDTo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertAEDToResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICurrencyConversionService_ConvertRUBTo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertRUBTo" />
+  </wsdl:message>
+  <wsdl:message name="ICurrencyConversionService_ConvertRUBTo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertRUBToResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ICurrencyConversionService">
+    <wsdl:operation name="ConvertINRTo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICurrencyConversionService/ConvertINRTo" message="tns:ICurrencyConversionService_ConvertINRTo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICurrencyConversionService/ConvertINRToResponse" message="tns:ICurrencyConversionService_ConvertINRTo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConvertUSDTo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICurrencyConversionService/ConvertUSDTo" message="tns:ICurrencyConversionService_ConvertUSDTo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICurrencyConversionService/ConvertUSDToResponse" message="tns:ICurrencyConversionService_ConvertUSDTo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConvertCADTo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICurrencyConversionService/ConvertCADTo" message="tns:ICurrencyConversionService_ConvertCADTo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICurrencyConversionService/ConvertCADToResponse" message="tns:ICurrencyConversionService_ConvertCADTo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConvertGBPTo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICurrencyConversionService/ConvertGBPTo" message="tns:ICurrencyConversionService_ConvertGBPTo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICurrencyConversionService/ConvertGBPToResponse" message="tns:ICurrencyConversionService_ConvertGBPTo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConvertYENTo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICurrencyConversionService/ConvertYENTo" message="tns:ICurrencyConversionService_ConvertYENTo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICurrencyConversionService/ConvertYENToResponse" message="tns:ICurrencyConversionService_ConvertYENTo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConvertEUROTo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICurrencyConversionService/ConvertEUROTo" message="tns:ICurrencyConversionService_ConvertEUROTo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICurrencyConversionService/ConvertEUROToResponse" message="tns:ICurrencyConversionService_ConvertEUROTo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConvertPKRTo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICurrencyConversionService/ConvertPKRTo" message="tns:ICurrencyConversionService_ConvertPKRTo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICurrencyConversionService/ConvertPKRToResponse" message="tns:ICurrencyConversionService_ConvertPKRTo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConvertYUANTo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICurrencyConversionService/ConvertYUANTo" message="tns:ICurrencyConversionService_ConvertYUANTo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICurrencyConversionService/ConvertYUANToResponse" message="tns:ICurrencyConversionService_ConvertYUANTo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConvertNZDTo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICurrencyConversionService/ConvertNZDTo" message="tns:ICurrencyConversionService_ConvertNZDTo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICurrencyConversionService/ConvertNZDToResponse" message="tns:ICurrencyConversionService_ConvertNZDTo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConvertAEDTo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICurrencyConversionService/ConvertAEDTo" message="tns:ICurrencyConversionService_ConvertAEDTo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICurrencyConversionService/ConvertAEDToResponse" message="tns:ICurrencyConversionService_ConvertAEDTo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConvertRUBTo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICurrencyConversionService/ConvertRUBTo" message="tns:ICurrencyConversionService_ConvertRUBTo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICurrencyConversionService/ConvertRUBToResponse" message="tns:ICurrencyConversionService_ConvertRUBTo_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ICurrencyConversionService" type="tns:ICurrencyConversionService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConvertINRTo">
+      <soap:operation soapAction="http://tempuri.org/ICurrencyConversionService/ConvertINRTo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertUSDTo">
+      <soap:operation soapAction="http://tempuri.org/ICurrencyConversionService/ConvertUSDTo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertCADTo">
+      <soap:operation soapAction="http://tempuri.org/ICurrencyConversionService/ConvertCADTo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertGBPTo">
+      <soap:operation soapAction="http://tempuri.org/ICurrencyConversionService/ConvertGBPTo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertYENTo">
+      <soap:operation soapAction="http://tempuri.org/ICurrencyConversionService/ConvertYENTo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertEUROTo">
+      <soap:operation soapAction="http://tempuri.org/ICurrencyConversionService/ConvertEUROTo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertPKRTo">
+      <soap:operation soapAction="http://tempuri.org/ICurrencyConversionService/ConvertPKRTo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertYUANTo">
+      <soap:operation soapAction="http://tempuri.org/ICurrencyConversionService/ConvertYUANTo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertNZDTo">
+      <soap:operation soapAction="http://tempuri.org/ICurrencyConversionService/ConvertNZDTo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertAEDTo">
+      <soap:operation soapAction="http://tempuri.org/ICurrencyConversionService/ConvertAEDTo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertRUBTo">
+      <soap:operation soapAction="http://tempuri.org/ICurrencyConversionService/ConvertRUBTo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CurrenyConversionService">
+    <wsdl:port name="BasicHttpBinding_ICurrencyConversionService" binding="tns:BasicHttpBinding_ICurrencyConversionService">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/CurrencyConversionService/Service1/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
